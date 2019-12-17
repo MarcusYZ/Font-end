@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .message-box {
+      position: relative;
+      width: 240px;
+      height: 60px;
+      line-height: 60px;
+      /* 文字垂直居中 */
+      background: #E9FBE4;
+      border: 1px solid #C9E9C0;
+      border-radius: 4px;
+      /* css3 方框圆角 */
+      text-align: center;
+      color: #0C7823;
+    }
+
+    .triangle-css3 {
+      position: absolute;
+      /* 绝对定位 */
+      bottom: -8px;
+      bottom: -6px;
+      left: 30px;
+      width: 13px;
+      height: 13px;
+      background: #E9FBE4;
+      border-bottom: 1px solid #C9E9C0;
+      border-right: 1px solid #C9E9C0;
+    }
+
+    .transform {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      /* 前缀表示适配不同内核的浏览器 */
+      transform: rotate(45deg);
+      /* css3 旋转 */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="message-box">
+    <span>css transfrom </span>
+    <div class="triangle-css3 transform ie-transform-filter"></div>
+  </div>
+</body>
+
+</html>
